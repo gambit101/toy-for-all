@@ -7,9 +7,9 @@ const CheckOut = () => {
     const categories = useLoaderData();
 
     const { title, _id, price, category, quantity, img } = categories;
-    const {user} = useContext(AuthContext)
+    const { user } = useContext(AuthContext)
 
-    const handleBookService = () =>{
+    const handleBookService = () => {
         event.preventDefault();
 
         const form = event.target;
@@ -28,6 +28,27 @@ const CheckOut = () => {
             quantity
         }
         console.log(booking);
+
+        fetch('http://localhost:5000/bookings', {
+            method: "POST",
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(booking)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                // if (data.deletedCount > 0) {
+                //     Swal.fire(
+                //         'Deleted!',
+                //         'Your file has been deleted.',
+                //         'success'
+                //     )
+                //     const remaining = coffees.filter(cof => cof._id !== _id);
+                //     setCoffees(remaining)
+                // }
+            })
     }
 
     return (
@@ -41,7 +62,7 @@ const CheckOut = () => {
                         <label className="label">
                             <span className="label-text">Name</span>
                         </label>
-                        <input type="text" name='name' placeholder="Name"  className="input input-bordered" />
+                        <input type="text" name='name' placeholder="Name" className="input input-bordered" />
                     </div>
                     <div className="form-control">
                         <label className="label">
@@ -54,7 +75,7 @@ const CheckOut = () => {
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="text" name='email' defaultValue={user?.email}  placeholder="email" className="input input-bordered" />
+                        <input type="text" name='email' defaultValue={user?.email} placeholder="email" className="input input-bordered" />
                     </div>
                     <div className="form-control">
                         <label className="label">
