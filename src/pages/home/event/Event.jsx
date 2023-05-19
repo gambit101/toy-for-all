@@ -1,9 +1,9 @@
 
 const Event = () => {
     return (
-        <div>
+        <div className="bg-[#474E68] py-24">
             <h2 className="text-center my-8 text-4xl font-bold">Upcoming Events</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-3">
+            <div className="grid grid-cols-1 lg:grid-cols-3 mx-auto">
                 <div className="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="https://images.unsplash.com/photo-1472457897821-70d3819a0e24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFjdGlvbiUyMGZpZ3VyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Shoes" /></figure>
                     <div className="card-body">

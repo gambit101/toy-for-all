@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar rounded-xl mb-2 bg-[#404258] text-white">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -23,7 +24,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
+                    <li><Link to='/'>Home</Link></li>
                     <li tabIndex={0}>
                         <a>
                             All Toys
@@ -31,8 +32,9 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li><a>My Toys</a></li>
-                    <li><a>Add a Toy</a></li>
+                    <li><Link to='/addToy'>Add a Toy</Link></li>
                     <li><a>Blogs</a></li>
+                    <li><Link to='/login'>Login</Link></li>
                 </ul>
             </div>
             <div className="navbar-end">
