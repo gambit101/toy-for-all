@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
 const SignUp = () => {
-    // const [error, setError] = useState('');
+    const [error, setError] = useState('');
     const { createUser } = useContext(AuthContext)
 
     const handleSignUp = event => {
@@ -15,15 +15,11 @@ const SignUp = () => {
         const photo = form.photo.value;
         console.log(email, password, photo);
 
-        // setError('');
-        // if (password !== confirm) {
-        //     setError('your pass didnt match');
-        //     return
-        // }
-        // else if (password.length < 6) {
-        //     setError('pass must be more than 6 characters')
-        //     return
-        // }
+        setError('');
+        if (password.length < 6) {
+            setError('pass must be more than 6 characters')
+            return
+        }
 
         createUser(email, password)
             .then(result => {
@@ -81,7 +77,7 @@ const SignUp = () => {
                             </div>
                         </form>
                         <p className="text-center my-6">Already have an account? <Link className="text-violet-700 font-bold" to='/login'>Login</Link></p>
-                        {/* <p>{error}</p> */}
+                        <p className="text-red-600 text-center font-bold">{error}</p>
                     </div>
                 </div>
             </div>

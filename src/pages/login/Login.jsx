@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
@@ -6,7 +6,8 @@ import app from "../../firebase/firebase.config";
 
 const Login = () => {
 
-    const { signIn } = useContext(AuthContext)
+    const { signIn } = useContext(AuthContext);
+    const [error, setError] = useState('');
 
     const auth = getAuth(app);
     const googleProvider = new GoogleAuthProvider();
@@ -28,7 +29,7 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error);
-                // setError(error.message)
+                setError(error.message)
             })
     }
 
@@ -78,8 +79,10 @@ const Login = () => {
                                 <button onClick={handleGoogleSignIn} className="btn btn-block my-3">Login with google</button>
                             </div>
                         </form>
+                        <p className="text-red-600 font-bold text-center">{error}</p>
                         <p className="text-center my-6">New to this site? <Link className="text-violet-700 font-bold" to='/signUp'>Sign up</Link></p>
                     </div>
+                    
                 </div>
             </div>
         </div>
