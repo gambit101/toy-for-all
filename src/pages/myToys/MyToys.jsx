@@ -33,6 +33,29 @@ const MyToys = () => {
         }
     }
 
+    const handleUpdate = id => {
+        fetch(`http://localhost:5000/booking/${id}`, {
+            method: 'PATCH',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify({status: 'Updated'})
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.modifiedCount > 0) {
+                    alert('Updated successfully')
+                    // update state 
+                    const remaining = bookings.filter(booking => booking._id !== id);
+                    const updated = bookings.find(booking => booking._id === id);
+                    updated.status = 'Updated'
+                    const newBookings = [updated, ...remaining]
+                    setBookings(newBookings)
+                }
+            })
+    }
+
     return (
         <div>
             <h2>this is my toys: {bookings.length}</h2>
@@ -55,7 +78,7 @@ const MyToys = () => {
                     </thead>
                     <tbody>
                         {
-                            bookings.map(booking => <MyToysRow key={booking._id} booking={booking} handleDelete={handleDelete}></MyToysRow>)
+                            bookings.map(booking => <MyToysRow key={booking._id} booking={booking} handleDelete={handleDelete} handleUpdate={handleUpdate}></MyToysRow>)
                         }
                     </tbody>
 

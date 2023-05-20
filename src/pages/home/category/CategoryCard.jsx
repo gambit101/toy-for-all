@@ -12,7 +12,7 @@ const CategoryCard = ({ category }) => {
                 <p>Price: {price}</p>
                 <p>Rating: {rating}</p>
                 <div className="card-actions justify-start">
-                    <Link to={`/checkout/${_id}`}>
+                    <Link to={`/viewDetails/${_id}`}>
                         <button className="btn btn-primary">View Details</button>
                     </Link>
                 </div>

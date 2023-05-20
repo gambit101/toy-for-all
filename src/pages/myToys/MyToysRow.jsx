@@ -1,7 +1,7 @@
 
-const MyToysRow = ({ booking, handleDelete }) => {
+const MyToysRow = ({ booking, handleDelete, handleUpdate }) => {
 
-    const { _id, img, title, price, rating, category, quantity, customerName, email, service } = booking;
+    const { _id, img, price, rating, category, quantity, customerName, email, service, status } = booking;
 
 
 
@@ -33,7 +33,7 @@ const MyToysRow = ({ booking, handleDelete }) => {
             <td>{rating}</td>
             <td>{category}</td>
             <th>
-                <button className="btn btn-primary">Update</button>
+                {status === "Updated" ? <button className="btn ">Updated</button> : <button onClick={() => handleUpdate(_id)} className="btn btn-primary">Update</button>}
             </th>
         </tr>
     );
