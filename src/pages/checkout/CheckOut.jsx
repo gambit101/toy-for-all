@@ -51,6 +51,10 @@ const CheckOut = () => {
             })
     }
 
+    const added = () =>{
+        alert('Added to your toys')
+    }
+
     return (
         <div>
             <h2 className="text-3xl text-center my-8 font-bold">Toy Name: {title}</h2>
@@ -100,7 +104,7 @@ const CheckOut = () => {
                     </div>
                 </div>
                 <div className="form-control mt-6">
-                    <input type="submit" className="btn btn-primary" value="Add to my toys" />
+                    <input onClick={added} type="submit" className="btn btn-primary" value="Add to my toys" />
                 </div>
             </form>
         </div>

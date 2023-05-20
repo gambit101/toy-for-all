@@ -58,7 +58,7 @@ const MyToys = () => {
 
     return (
         <div>
-            <h2>this is my toys: {bookings.length}</h2>
+            
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
                     {/* head */}

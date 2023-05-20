@@ -31,8 +31,8 @@ const Navbar = () => {
                         <li><Link to='/login'>Login</Link></li>
                     </ul>
                 </div>
-                <img className="h-12 w-16" src="https://img.freepik.com/free-vector/superhero-text-effect-editable-cartoon-comic-text-style_314614-1816.jpg?size=626&ext=jpg&ga=GA1.1.596352723.1673069920&semt=ais" alt="" />
-                <a className="btn btn-ghost normal-case text-xl font-bold">Toy For All</a>
+                <img className="h-12 w-16 rounded-xl" src="https://img.freepik.com/free-vector/superhero-text-effect-editable-cartoon-comic-text-style_314614-1816.jpg?size=626&ext=jpg&ga=GA1.1.596352723.1673069920&semt=ais" alt="" />
+                <Link to='/' className="btn btn-ghost normal-case text-xl font-bold">Toy For All</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

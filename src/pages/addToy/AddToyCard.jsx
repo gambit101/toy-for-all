@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 
 const AddToyCard = ({addToy}) => {
-    const { _id, img, title, price, rating, category, quantity } = addToy
+    const { _id, img, title, price, rating, category, quantity } = addToy;
+
+
     return (
         <div className="card bg-slate-400 w-96 font-bold shadow-xl">
             <figure><img src={img} alt="Shoes" /></figure>
@@ -13,7 +15,7 @@ const AddToyCard = ({addToy}) => {
                 <p>Quantity: {quantity}</p>
                 <div className="card-actions justify-start">
                     <Link to={`/checkout/${_id}`}>
-                        <button className="btn btn-primary">Add</button>
+                        <button  className="btn btn-primary">Add</button>
                     </Link>
                 </div>
             </div>
