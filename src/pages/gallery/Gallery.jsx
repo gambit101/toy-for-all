@@ -10,7 +10,7 @@ const Gallery = () => {
 
     return (
         <div data-aos='zoom-out'>
-            <h2 className="text-4xl font-bold text-center my-10">Some of your favorite heros</h2>
+            <h2 className="text-4xl font-bold text-center my-14">Some of your favorite heros</h2>
             <div className="carousel carousel-end rounded-box">
                 <div className="carousel-item">
                     <img src="https://w0.peakpx.com/wallpaper/497/3/HD-wallpaper-thor-ragnarok-hulk-lighting-god-thor-and-hulk-marvel-thumbnail.jpg" alt="Drink" />
