@@ -65,7 +65,6 @@ const MyToys = () => {
                     <thead className="bg-slate-600">
                         <tr>
                             <th>
-
                             </th>
                             <th>Image and Toy Name</th>
                             <th>Name</th>
