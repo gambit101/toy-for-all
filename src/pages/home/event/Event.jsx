@@ -3,8 +3,9 @@ const Event = () => {
     return (
         <div className="bg-[#404258] py-12 rounded-xl">
             <h2 className="text-center my-8 text-4xl font-bold text-white">Upcoming Events</h2>
+            <hr />
             <p className=" text-center font-bold text-gray-300"> a convention (con, for short) focused on comic books and related forms <br /> of pop culture entertainment, including movies, TV shows, and video games.</p>
-            <div className="grid grid-cols-1 lg:grid-cols-3 mx-auto gap-10 p-11">
+            <div className="grid grid-cols-1 lg:grid-cols-3 mx-auto  p-10">
                 <div className="card w-96 shadow-xl bg-slate-400">
                     <figure><img src="https://images.unsplash.com/photo-1472457897821-70d3819a0e24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFjdGlvbiUyMGZpZ3VyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Shoes" /></figure>
                     <div className="card-body">

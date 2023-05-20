@@ -1,9 +1,9 @@
 
 const Story = () => {
     return (
-        <div className='flex bg-[#404258] sm:flex-none gap-6 justify-center mt-5 p-10 rounded-xl mb-10' data-aos='fade-right'>
-            <div className='w-1/2'>
-                <h2 className='text-center my-4'><span className='text-white text-4xl font-bold'>Our story</span></h2>
+        <div className='grid grid-cols-1 lg:grid-cols-2 bg-[#404258]  gap-6 justify-center mt-5 p-10 rounded-xl mb-10' data-aos='fade-right'>
+            <div>
+                <h2 className='text-center my-4'><span className='text-white text-4xl font-bold'>About Our Store</span></h2>
                 <hr />
                 <p className='text-gray-300 mt-6'>To help the business grow, Veaceslav participated in the 2021 grants competition announced by the “EU4Moldova: Focal Region” programme, funded by the EU and implemented by UNDP and UNICEF. As a result, he received approximately €25,000 for the purchase of various equipment installed in the restaurant, warehouse, bakery, and semi-finished products production point.
 

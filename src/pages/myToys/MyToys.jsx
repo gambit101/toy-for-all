@@ -39,7 +39,7 @@ const MyToys = () => {
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify({status: 'Updated'})
+            body: JSON.stringify({ status: 'Updated' })
         })
             .then(res => res.json())
             .then(data => {

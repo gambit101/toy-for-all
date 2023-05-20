@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
@@ -80,7 +80,7 @@ const SignUp = () => {
                                 <input className="btn btn-primary" type="submit" value="Sign Up" />
                             </div>
                         </form>
-                        <p className="text-center my-6">Already have an account? <Link to='/login'>Login</Link></p>
+                        <p className="text-center my-6">Already have an account? <Link className="text-violet-700 font-bold" to='/login'>Login</Link></p>
                         {/* <p>{error}</p> */}
                     </div>
                 </div>

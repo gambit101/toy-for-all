@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import CategoryCard from "./CategoryCard";
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
 
 const Category = () => {
     const [categories, setCategory] = useState([]);

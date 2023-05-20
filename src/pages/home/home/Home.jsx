@@ -1,3 +1,4 @@
+import Gallery from "../../gallery/Gallery";
 import Banner from "../banner/Banner";
 import Category from "../category/Category";
 import Event from "../event/Event";
@@ -7,6 +8,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
+            <Gallery></Gallery>
             <Category></Category>
             <Story></Story>
             <Event></Event>
