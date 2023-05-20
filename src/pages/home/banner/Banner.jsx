@@ -1,3 +1,6 @@
+import Typewriter from 'typewriter-effect';
+
+
 
 const Banner = () => {
     return (
@@ -6,12 +9,19 @@ const Banner = () => {
                 <img src="https://c4.wallpaperflare.com/wallpaper/576/838/565/spiderman-4k-artwork-hd-wallpaper-preview.jpg" className="w-full rounded-xl" />
                 <div className="absolute rounded-xl flex items-center gap-6 h-full left-0 bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                     <div className='text-white w-2/3 font-bold space-y-7  pl-12'>
-                        <h2 className='text-6xl flex'>Welcome to our store!</h2>
+                        <h2 className='text-5xl flex'><Typewriter
+                            options={{
+                                strings: ['Welcome to our store!'],
+                                autoStart: true,
+                                loop: true,
+                            }}
+                        /></h2>
+                        
                         <div className="avatar placeholder my-6">
                             <div className="text-neutral-content rounded-full h-28 w-28 bg-black">
                                 <span className="text-3xl text-center font-extrabold text-yellow-300">50% off</span>
                             </div>
-                            <p className="items-center ml-4 pt-10 text-4xl">On all products</p>
+                            <p className="items-center ml-4 pt-10 text-4xl">On all products!!!</p>
                         </div>
                         <p>We are kids. The only difference is the toy we have. Start with something simple and small, then expand over time. If people call it a toy you are definitely onto something.
                         </p>
@@ -30,6 +40,7 @@ const Banner = () => {
                 <img src="https://images.unsplash.com/photo-1568833450751-fba3c6b2d129?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aXJvbm1hbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" className="w-full rounded-xl" />
                 <div className="absolute flex items-center gap-6 h-full left-0 bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                     <div className='text-white w-2/3 font-bold space-y-7  pl-12'>
+
                         <h2 className='text-6xl'>Welcome to our store!</h2>
                         <div className="avatar placeholder my-6">
                             <div className="text-neutral-content rounded-full h-28 w-28 bg-black">
