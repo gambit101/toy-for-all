@@ -25,7 +25,7 @@ const Blog = () => {
             <div className="my-6">
                 <div className="bg-slate-400 p-6 rounded-xl">
                     <h2 className="text-3xl font-bold text-center">What is MongoDB aggregate and how does it work?</h2>
-                    <p className="text-center font-bold py-6" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit necessitatibus quasi tenetur laudantium quas repellendus enim, ratione iure quaerat id obcaecati neque voluptatum soluta iusto aspernatur facilis quibusdam labore eius atque qui officiis sapiente possimus doloribus vel. Harum, laborum accusantium.</p>
+                    <p className="text-center font-bold py-6" >In MongoDB, the aggregate function is a powerful tool that allows you to perform advanced data processing and analysis operations on collections of documents. The aggregate function takes an array of stages as its argument, with each stage specifying a specific operation or transformation to be applied to the data.</p>
                 </div>
             </div>
         </div>
