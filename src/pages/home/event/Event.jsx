@@ -1,10 +1,11 @@
 
 const Event = () => {
     return (
-        <div className="bg-[#474E68] py-24">
-            <h2 className="text-center my-8 text-4xl font-bold">Upcoming Events</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-3 mx-auto">
-                <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="bg-[#404258] py-12 rounded-xl">
+            <h2 className="text-center my-8 text-4xl font-bold text-white">Upcoming Events</h2>
+            <p className=" text-center font-bold text-gray-300"> a convention (con, for short) focused on comic books and related forms <br /> of pop culture entertainment, including movies, TV shows, and video games.</p>
+            <div className="grid grid-cols-1 lg:grid-cols-3 mx-auto gap-10 p-11">
+                <div className="card w-96 shadow-xl bg-slate-400">
                     <figure><img src="https://images.unsplash.com/photo-1472457897821-70d3819a0e24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFjdGlvbiUyMGZpZ3VyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title text-3xl font-bold">Show your collection</h2>
@@ -12,7 +13,7 @@ const Event = () => {
                         
                     </div>
                 </div>
-                <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="card w-96  bg-slate-400 shadow-xl">
                     <figure><img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cXVpenxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title text-3xl font-bold">Superhero quiz competition</h2>
@@ -20,7 +21,7 @@ const Event = () => {
                         
                     </div>
                 </div>
-                <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="card w-96  bg-slate-400 shadow-xl">
                     <figure><img src="https://images.unsplash.com/photo-1605663864774-748f5f858a08?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvc3BsYXl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title text-3xl font-bold">Cosplay as your favorite hero</h2>

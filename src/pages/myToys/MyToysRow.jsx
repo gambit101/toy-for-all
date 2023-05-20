@@ -1,7 +1,7 @@
 
 const MyToysRow = ({ booking, handleDelete, handleUpdate }) => {
 
-    const { _id, img, price, rating, category, quantity, customerName, email, service, status } = booking;
+    const { _id, img, price, rating, category, customerName, email, service, status } = booking;
 
 
 

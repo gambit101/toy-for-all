@@ -62,7 +62,7 @@ const MyToys = () => {
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
                     {/* head */}
-                    <thead>
+                    <thead className="bg-slate-600">
                         <tr>
                             <th>
 

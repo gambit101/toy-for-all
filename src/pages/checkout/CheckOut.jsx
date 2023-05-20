@@ -100,7 +100,7 @@ const CheckOut = () => {
                     </div>
                 </div>
                 <div className="form-control mt-6">
-                    <input type="submit" className="btn btn-primary" value="Order confirm" />
+                    <input type="submit" className="btn btn-primary" value="Add to my toys" />
                 </div>
             </form>
         </div>

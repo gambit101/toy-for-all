@@ -42,9 +42,9 @@ const Navbar = () => {
                             
                         </Link>
                     </li>
-                    <li><Link to='/myToys'>My Toys</Link></li>
-                    <li><Link to='/addToy'>Add a Toy</Link></li>
-                    {user?.email ? <li><button onClick={handleLogOut}>Logout</button></li> :<li><Link to='/login'>Login</Link></li>}
+                    
+                    
+                    {user?.email ? <div className="grid lg:grid-cols-3"><li><Link to='/addToy'>Add a Toy</Link></li><li><Link to='/myToys'>My Toys</Link></li><li><button onClick={handleLogOut}>Logout</button></li></div> :<li><Link to='/login'>Login</Link></li>}
                     
                 </ul>
             </div>
