@@ -39,15 +39,7 @@ const CheckOut = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                // if (data.deletedCount > 0) {
-                //     Swal.fire(
-                //         'Deleted!',
-                //         'Your file has been deleted.',
-                //         'success'
-                //     )
-                //     const remaining = coffees.filter(cof => cof._id !== _id);
-                //     setCoffees(remaining)
-                // }
+                
             })
     }
 
