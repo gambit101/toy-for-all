@@ -8,10 +8,12 @@ const Category = () => {
     const [categories, setCategory] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/category')
+        fetch('https://toy-for-all-server.vercel.app/category')
             .then(res => res.json())
             .then(data => setCategory(data))
     }, [])
+
+    
 
     useEffect(()=>{
         AOS.init({duration: 2000})

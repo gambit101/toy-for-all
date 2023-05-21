@@ -5,7 +5,7 @@ const AllToys = () => {
     const [allToys, setAllToys] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/bookings')
+        fetch('https://toy-for-all-server.vercel.app/bookings')
             .then(res => res.json())
             .then(data => setAllToys(data))
     }, [])

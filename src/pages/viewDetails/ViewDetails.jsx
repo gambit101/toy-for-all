@@ -10,8 +10,9 @@ const ViewDetails = () => {
     },[])
 
     const categories = useLoaderData();
-    console.log(categories);
     const { title, price, category, quantity, img, rating } = categories;
+    console.log(categories);
+
 
     return (
         <div className="grid lg:grid-cols-2 gap-10 p-24" data-aos='zoom-in'>

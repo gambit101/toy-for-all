@@ -7,7 +7,7 @@ const MyToys = () => {
     const { user } = useContext(AuthContext);
     const [bookings, setBookings] = useState([]);
 
-    const url = `http://localhost:5000/booking?email=${user?.email}`;
+    const url = `https://toy-for-all-server.vercel.app/booking?email=${user?.email}`;
 
     useEffect(() => {
         fetch(url)
@@ -18,7 +18,7 @@ const MyToys = () => {
     const handleDelete = id => {
         const proceed = confirm('are you sure you want to delete?');
         if (proceed) {
-            fetch(`http://localhost:5000/booking/${id}`, {
+            fetch(`https://toy-for-all-server.vercel.app/booking/${id}`, {
                 method: "DELETE"
             })
                 .then(res => res.json())
@@ -34,7 +34,7 @@ const MyToys = () => {
     }
 
     const handleUpdate = id => {
-        fetch(`http://localhost:5000/booking/${id}`, {
+        fetch(`https://toy-for-all-server.vercel.app/booking/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

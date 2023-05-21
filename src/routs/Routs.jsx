@@ -37,7 +37,7 @@ const router = createBrowserRouter([
         {
           path: 'checkOut/:id',
           element: <CheckOut></CheckOut>,
-          loader: ({params}) => fetch(`http://localhost:5000/category/${params.id}`)
+          loader: ({params}) => fetch(`https://toy-for-all-server.vercel.app/category/${params.id}`)
         },
         {
           path: 'allToys',
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
         {
           path: 'viewDetails/:id',
           element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/category/${params.id}`)
+          loader: ({params}) => fetch(`https://toy-for-all-server.vercel.app/category/${params.id}`)
         },
         {
           path: 'blog',
